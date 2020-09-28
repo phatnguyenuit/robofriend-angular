@@ -6,11 +6,11 @@ import { HomeComponent } from './containers/home/home.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent,
   },
   {
-    path: 'robo',
+    path: '',
     component: RoboAppComponent,
   },
 ];
