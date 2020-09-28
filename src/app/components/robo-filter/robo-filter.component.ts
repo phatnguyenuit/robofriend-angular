@@ -14,7 +14,7 @@ export class RoboFilterComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.searchForm = this.formBuilder.group({
       search: '',
     });
