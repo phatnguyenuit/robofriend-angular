@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { RoboService, User } from '../../services/robo.service';
+import { Component, Input, OnInit } from '@angular/core';
+import { User } from '../../services/robo.service';
 
 @Component({
   selector: 'app-robo-list',
@@ -7,18 +7,14 @@ import { RoboService, User } from '../../services/robo.service';
   styleUrls: ['./robo-list.component.css'],
 })
 export class RoboListComponent implements OnInit {
+  @Input()
   robos: User[];
 
-  constructor(private roboService: RoboService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.roboService
-      .getList()
-      .then((users) => (this.robos = users))
-      .catch(console.error);
-  }
+  ngOnInit(): void {}
 
-  trackById(_: number, item: User) {
+  trackById(_: number, item: User): number {
     return item.id;
   }
 }

@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## TODO
 
 - [ ] Getting started with Observable to subscrible new changes
-- [ ] Implement filter form
+- [x] Implement filter form
 
 ## Development server
 

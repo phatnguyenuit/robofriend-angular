@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-robo-filter',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./robo-filter.component.css'],
 })
 export class RoboFilterComponent implements OnInit {
-  searchValue: string;
-  constructor() {}
+  searchForm: FormGroup;
+
+  @Output()
+  searchEvent = new EventEmitter<string>();
+
+  constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit(): void {
-    this.searchValue = '';
+    this.searchForm = this.formBuilder.group({
+      search: '',
+    });
+  }
+
+  onSubmit() {
+    const { search } = this.searchForm.value;
+    this.searchEvent.emit(search);
   }
 }

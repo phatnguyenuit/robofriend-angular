@@ -1,4 +1,6 @@
 <div class="robo-filter">
-  <label for="search">Search Robo:</label>
-  <input id="search" name="search" [value]="searchValue" />
+  <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+    <label for="search">Search Robo:</label>
+    <input id="search" formControlName="search" />
+  </form>
 </div>

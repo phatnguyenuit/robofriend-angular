@@ -1,7 +1,9 @@
-<a rel="noopener" routerLink="/" routerLinkActive="active">
-  <span>Back home</span>
-</a>
+<div class="robo-app">
+  <a rel="noopener" routerLink="/" routerLinkActive="active">
+    <span>Back home</span>
+  </a>
 
-<h1>RoboFriends</h1>
-<app-robo-filter></app-robo-filter>
-<app-robo-list></app-robo-list>
+  <h1>RoboFriends</h1>
+  <app-robo-filter (searchEvent)="searchEvent($event)"></app-robo-filter>
+  <app-robo-list [robos]="filteredRobos"></app-robo-list>
+</div>
