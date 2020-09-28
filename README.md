@@ -6,6 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - [ ] Getting started with Observable to subscrible new changes
 - [x] Implement filter form
+- [x] [Configure TSLint, Husky, Prettier](https://www.daptontechnologies.com/angular-prettier-husky/)
 
 ## Development server
 

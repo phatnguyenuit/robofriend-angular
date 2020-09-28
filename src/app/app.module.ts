@@ -9,7 +9,7 @@ import { HomeComponent } from './containers/home/home.component';
 import { RoboListComponent } from './components/robo-list/robo-list.component';
 import { RoboComponent } from './components/robo/robo.component';
 import { RoboFilterComponent } from './components/robo-filter/robo-filter.component';
-import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [

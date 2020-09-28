@@ -23,13 +23,10 @@ describe('HomeComponent', () => {
   });
 
   it(`should have as title 'robo-friend'`, () => {
-    const fixture = TestBed.createComponent(HomeComponent);
-    const component = fixture.componentInstance;
     expect(component.title).toEqual('robo-friend');
   });
 
   it('should render title', () => {
-    const fixture = TestBed.createComponent(HomeComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.content span').textContent).toContain(
