@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { RoboFilterComponent } from './robo-filter.component';
 
@@ -8,9 +9,9 @@ describe('RoboFilterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RoboFilterComponent ]
-    })
-    .compileComponents();
+      imports: [ReactiveFormsModule],
+      declarations: [RoboFilterComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
