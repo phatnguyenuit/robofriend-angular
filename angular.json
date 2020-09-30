@@ -105,6 +105,12 @@
               "devServerTarget": "robo-friend:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/robofriend-angular/"
+          }
         }
       }
     }
