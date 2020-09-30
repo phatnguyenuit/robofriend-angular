@@ -13,6 +13,8 @@ export class RoboAppComponent implements OnInit {
 
   constructor(private roboService: RoboService) {
     this.loading = false;
+    this.robos = [];
+    this.filteredRobos = [];
   }
 
   ngOnInit() {
