@@ -109,7 +109,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "/robofriend-angular/"
+            "baseHref": "https://phatnguyenuit.github.io/robofriend-angular/"
           }
         }
       }
