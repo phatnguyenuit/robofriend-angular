@@ -8,6 +8,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [x] Implement filter form
 - [x] [Configure TSLint, Husky, Prettier](https://www.daptontechnologies.com/angular-prettier-husky/)
 
+## Deploy
+
+Run `yarn deploy --message "Message"` to deploy code to github pages
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
