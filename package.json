@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "predeploy": "yarn build --base-href /robofriend-angular/",
-    "deploy": "ng deploy --base-href=/robofriend-angular/"
+    "deploy": "gh-pages -d dist/robo-friend"
   },
   "private": true,
   "dependencies": {
