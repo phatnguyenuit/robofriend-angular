@@ -7,6 +7,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [x] Getting started with Observable to subscribe new changes
 - [x] Implement filter form
 - [x] [Configure TSLint, Husky, Prettier](https://www.daptontechnologies.com/angular-prettier-husky/)
+- [ ] [Components/User input](https://angular.io/guide/user-input)
+- [ ] [Components/Pipes](https://angular.io/guide/pipes)
+- [ ] [Components/Component Lifecycle](https://angular.io/guide/lifecycle-hooks)
+- [ ] [Components/Component interaction](https://angular.io/guide/component-interaction)
+- [ ] [Components/Dynamic component](https://angular.io/guide/dynamic-component-loader)
+- [ ] [Components/Angular elements](https://angular.io/guide/elements)
 
 ## Deploy
 
