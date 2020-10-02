@@ -1,5 +1,10 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { RoboService, User } from 'src/app/services/robo.service';
+
+import { AdItem } from 'src/app/components/ad/ad.component';
+import { RoboJobAdComponent } from 'src/app/components/ad/robo-job-ad/robo-job-ad.component';
+import { RoboProfileAdComponent } from 'src/app/components/ad/robo-profile-ad/robo-profile-ad.component';
+import { ROBOS, ROBO_JOBS } from 'src/app/constants/seeds';
+import { RoboService } from 'src/app/services/robo.service';
 
 @Component({
   selector: 'app-robo-app',
@@ -7,19 +12,29 @@ import { RoboService, User } from 'src/app/services/robo.service';
   styleUrls: ['./robo-app.component.css'],
 })
 export class RoboAppComponent implements OnInit, OnDestroy {
-  robos: User[];
-  filteredRobos: User[];
+  robos: Robo[];
+  filteredRobos: Robo[];
   loading: boolean;
   search: string;
+
+  ads: AdItem[];
 
   constructor(private roboService: RoboService) {
     this.loading = false;
     this.robos = [];
     this.filteredRobos = [];
     this.search = '';
+
+    this.ads = [
+      ...ROBOS.slice(0, 3).map(
+        (robo) => new AdItem(RoboProfileAdComponent, robo)
+      ),
+      ...ROBO_JOBS.map((roboJob) => new AdItem(RoboJobAdComponent, roboJob)),
+    ];
   }
 
   ngOnInit() {
+    console.log('Disable adblock to see ads');
     this.fetchRobos();
   }
 

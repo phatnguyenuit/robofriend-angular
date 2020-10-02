@@ -1,22 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { seedRobos } from 'src/app/services/robo.service';
 
-import { RoboComponent } from './robo.component';
+import { RoboProfileAdComponent } from './robo-profile-ad.component';
 
-describe('RoboComponent', () => {
-  let component: RoboComponent;
-  let fixture: ComponentFixture<RoboComponent>;
+describe('RoboProfileAdComponent', () => {
+  let component: RoboProfileAdComponent;
+  let fixture: ComponentFixture<RoboProfileAdComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [RoboComponent],
+      declarations: [RoboProfileAdComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RoboComponent);
+    fixture = TestBed.createComponent(RoboProfileAdComponent);
     component = fixture.componentInstance;
-    component.robo = seedRobos[0];
     fixture.detectChanges();
   });
 

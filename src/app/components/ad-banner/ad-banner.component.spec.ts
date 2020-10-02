@@ -1,22 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { seedRobos } from 'src/app/services/robo.service';
 
-import { RoboComponent } from './robo.component';
+import { AddBannerComponent } from './ad-banner.component';
 
-describe('RoboComponent', () => {
-  let component: RoboComponent;
-  let fixture: ComponentFixture<RoboComponent>;
+describe('AddBannerComponent', () => {
+  let component: AddBannerComponent;
+  let fixture: ComponentFixture<AddBannerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [RoboComponent],
+      declarations: [AddBannerComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RoboComponent);
+    fixture = TestBed.createComponent(AddBannerComponent);
     component = fixture.componentInstance;
-    component.robo = seedRobos[0];
     fixture.detectChanges();
   });
 

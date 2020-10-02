@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { User } from '../../services/robo.service';
 
 @Component({
   selector: 'app-robo',
@@ -8,7 +7,7 @@ import { User } from '../../services/robo.service';
 })
 export class RoboComponent implements OnInit {
   @Input()
-  robo: User;
+  robo: Robo;
 
   imageSrc: string;
 

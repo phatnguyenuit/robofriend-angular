@@ -1,7 +1,6 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { fromEvent, Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { User } from '../../services/robo.service';
 
 @Component({
   selector: 'app-robo-list',
@@ -10,7 +9,7 @@ import { User } from '../../services/robo.service';
 })
 export class RoboListComponent implements OnInit, OnDestroy {
   @Input()
-  robos: User[];
+  robos: Robo[];
 
   clickSubscription: Subscription;
 
@@ -26,7 +25,7 @@ export class RoboListComponent implements OnInit, OnDestroy {
     this.clickSubscription.unsubscribe();
   }
 
-  trackById(_: number, item: User): number {
+  trackById(_: number, item: Robo): number {
     return item.id;
   }
 }
