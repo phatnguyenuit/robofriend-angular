@@ -13,7 +13,7 @@ export class RefreshButtonComponent implements OnInit {
 
   ngOnInit() {}
 
-  refreshRobots() {
+  refreshRobos() {
     this.refreshEvent.emit();
   }
 }
