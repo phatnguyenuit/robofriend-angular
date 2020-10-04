@@ -5,11 +5,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'robos',
-    pathMatch: 'full',
-  },
-  {
-    path: 'robos',
     loadChildren: () => import('./robos/robos.module').then(m => m.RobosModule),
   },
   {
