@@ -17,8 +17,8 @@ export class RoboListComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.clickSubscription = fromEvent<MouseEvent>(document, 'click')
-      .pipe(map((event) => event.timeStamp))
-      .subscribe((data) => console.log('click document at', data));
+      .pipe(map(event => event.timeStamp))
+      .subscribe(data => console.log('click document at', data));
   }
 
   ngOnDestroy() {

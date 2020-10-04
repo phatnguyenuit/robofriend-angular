@@ -6,7 +6,7 @@ import {
   OnInit,
   ViewChild,
 } from '@angular/core';
-import { AdDirective } from 'src/app/directives/ad/ad.directive';
+import { AdDirective } from '../../directives/ad/ad.directive';
 import { AdComponent, AdItem } from '../ad/ad.component';
 
 @Component({

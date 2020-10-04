@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RoboDashboardComponent } from './robo-dashboard.component';
+import { RoboListComponent } from './robo-list.component';
 
-describe('RoboDashboardComponent', () => {
-  let component: RoboDashboardComponent;
-  let fixture: ComponentFixture<RoboDashboardComponent>;
+describe('RoboListComponent', () => {
+  let component: RoboListComponent;
+  let fixture: ComponentFixture<RoboListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [RoboDashboardComponent],
+      declarations: [RoboListComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RoboDashboardComponent);
+    fixture = TestBed.createComponent(RoboListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,1 +1,18 @@
-<router-outlet></router-outlet>
+<header>
+  <nav>
+    <a rel="noopener" routerLink="/home" routerLinkActive="active">
+      <span>Home</span>
+    </a>
+    &nbsp;
+    <a rel="noopener" routerLink="/robos" routerLinkActive="active">
+      <span>Robos</span>
+    </a>
+    &nbsp;
+    <a rel="noopener" routerLink="/not-found" routerLinkActive="active">
+      <span>Not Found</span>
+    </a>
+  </nav>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>

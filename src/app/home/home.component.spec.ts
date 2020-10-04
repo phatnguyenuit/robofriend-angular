@@ -21,16 +21,4 @@ describe('HomeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
-  it(`should have as title 'robo-friend'`, () => {
-    expect(component.title).toEqual('robo-friend');
-  });
-
-  it('should render title', () => {
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain(
-      'robo-friend app is running!'
-    );
-  });
 });

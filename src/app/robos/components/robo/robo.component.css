@@ -1,15 +1,15 @@
 .robo-card {
   background-color: #9eebcf;
-  border-radius: .5rem;
-  padding: .5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
   text-align: center;
-  transition: transform .25s ease-out;
+  transition: transform 0.25s ease-out;
 }
 
 .robo-card:hover {
   transform: scale(1.05);
 }
 
-.robo-card>img {
+.robo-card > img {
   max-width: 100%;
 }
