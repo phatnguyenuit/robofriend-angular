@@ -13,6 +13,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [ ] [Components/Component interaction](https://angular.io/guide/component-interaction)
 - [x] [Components/Dynamic component](https://angular.io/guide/dynamic-component-loader)
 - [ ] [Components/Angular elements](https://angular.io/guide/elements)
+- [x] [Apply feature modules](https://angular.io/guide/feature-modules#feature-modules)
 
 ## Deploy
 
