@@ -6,16 +6,19 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./robos/robos.module').then(m => m.RobosModule),
+    pathMatch: 'full',
   },
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+    pathMatch: 'full',
   },
 ];
 
 routes.push({
   path: '**',
   component: NotFoundComponent,
+  pathMatch: 'full',
 });
 
 @NgModule({

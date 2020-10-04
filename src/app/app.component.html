@@ -4,12 +4,13 @@
       <span>Home</span>
     </a>
     &nbsp;
-    <a rel="noopener" routerLink="/" routerLinkActive="active">
+    <a
+      rel="noopener"
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       <span>Robos</span>
-    </a>
-    &nbsp;
-    <a rel="noopener" routerLink="/not-found" routerLinkActive="active">
-      <span>Not Found</span>
     </a>
   </nav>
 </header>
