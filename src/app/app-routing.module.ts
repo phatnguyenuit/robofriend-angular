@@ -13,6 +13,13 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
     pathMatch: 'full',
   },
+  {
+    path: 'temperature-converter',
+    loadChildren: () =>
+      import('./temperature-converter/temperature-converter.module').then(
+        m => m.TemperatureConverterModule
+      ),
+  },
 ];
 
 routes.push({
