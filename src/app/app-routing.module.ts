@@ -20,6 +20,11 @@ const routes: Routes = [
         m => m.TemperatureConverterModule
       ),
   },
+  {
+    path: 'fork-join',
+    loadChildren: () =>
+      import('./fork-join/fork-join.module').then(m => m.ForkJoinModule),
+  },
 ];
 
 routes.push({
